@@ -1,3 +1,6 @@
+<?php 
+ include "functions/functions.php";
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -36,7 +39,16 @@
 
 		<!--content starts-->
 		<div class="content_wrapper">
-			<div id="sidebar">This is sidebar</div>
+			<div id="sidebar">
+				<div id="sidebar_title">Categories</div>
+				<ul id="cats">
+					<?php GetCats(); ?>
+				</ul>
+				<div id="sidebar_title">Brands</div>
+				<ul id="cats">
+					<?php GetBrands(); ?>
+				</ul>
+			</div>
 			<div id="content_area">This is content area</div>	
 		</div>
 		<!--content ends-->
